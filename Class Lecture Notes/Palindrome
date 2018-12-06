@@ -1,0 +1,9 @@
+under spec folder
+name a file palindrome_spec.rb
+
+
+require_relative "../palindrome.rb"
+
+describe "palindromeChecker" do
+
+let (checker:)
