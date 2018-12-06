@@ -13,6 +13,9 @@ class CommandLineInterface
        get_response
   end
 
+  def get_response
+  response = gets.chomp
+  end
 # def gets_user_input
 #   puts "We can help you find which train lines are available at NYC subway stations."
 #   puts "Enter a subway station to get started:"

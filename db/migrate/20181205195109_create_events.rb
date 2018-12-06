@@ -4,7 +4,6 @@ class CreateEvents < ActiveRecord::Migration[5.0]
      e.string :name
      e.integer :price
      e.datetime :event_date
-     e.datetime :event_time
      e.boolean :alcohol
     end
   end
