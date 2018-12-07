@@ -38,20 +38,6 @@ a8 = Artist.create(name: "The Internet",genre: "r&b")
 a9 = Artist.create(name: "The Weeknd",genre: "pop")
 a10 = Artist.create(name: "Jay-z",genre: "rap")
 
-
-
-#Events instances
-e1 = Event.create(name: "Lollapalooza", price: 40, event_date: "2018-12-12 9:30", alcohol: true)
-e2 = Event.create(name: "10 Fest", price: 10, event_date: "2019-01-02 8:00", alcohol: true)
-e3 = Event.create(name: "Lit Dayparty", price: 25, event_date: "2019-02-03 6:00",alcohol: true)
-e4 = Event.create(name: "Carrolton Square ", price: 55, event_date: "2019-01-01 8:00",alcohol: true)
-e5 = Event.create(name: "Budget Bash", price: 0, event_date: "2019-03-12 8:00",alcohol: true)
-e6 = Event.create(name: "Libra Bash", price: 25, event_date: "2019-05-22 8:00",alcohol: false)
-e7 = Event.create(name: "Sleepy Bee Bash", price: 40, event_date: "2019-07-14 8:00",alcohol: true)
-e8 = Event.create(name: "Christmas Bash", price: 35, event_date: "2019-12-25 8:00",alcohol: false)
-e9 = Event.create(name: "Massive Kickback", price: 10, event_date: "2019-05-13 8:00",alcohol: true)
-e10 = Event.create(name: "Pisces Bash", price: 0, event_date: "2019-03-12 8:00",alcohol: false)
-
 # Location instances
 
 l1 = Location.create(venue_name: "Echostage", city_name: "Washington D.C", state_name: "DC", zipcode: 20018, capacity: 175, indoor: true)
@@ -64,3 +50,15 @@ l7 = Location.create(venue_name: "Georgia Dome", city_name: "Atlanta", state_nam
 l8 = Location.create(venue_name: "The Hills", city_name: "San Francisco", state_name: "CA", zipcode: 10014, capacity: 1000, indoor: false)
 l9 = Location.create(venue_name: "The Yard", city_name: "Fort Lauderdale", state_name: "FL", zipcode: 20010, capacity: 1000, indoor: false)
 l10 = Location.create(venue_name: "Long Beach Brewery", city_name: "Los Angeles", state_name: "CA", zipcode: 20010, capacity: 1000, indoor: false)
+
+#Events instances
+e1 = Event.create(name: "Lollapalooza", price: 40, event_date: "2018-12-12 9:30", alcohol: true, artist: a1, location: l10)
+e2 = Event.create(name: "10 Fest", price: 10, event_date: "2019-01-02 8:00", alcohol: true, artist: a3,location: l9)
+e3 = Event.create(name: "Lit Dayparty", price: 25, event_date: "2019-02-03 6:00",alcohol: true, artist: a2,location: l7)
+e4 = Event.create(name: "Carrolton Square ", price: 55, event_date: "2019-01-01 8:00",alcohol: true, artist: a4,location: l6)
+e5 = Event.create(name: "Budget Bash", price: 0, event_date: "2019-03-12 8:00",alcohol: true, artist: a5, location: l5)
+e6 = Event.create(name: "Libra Bash", price: 25, event_date: "2019-05-22 8:00",alcohol: false, artist: a6, location: l3)
+e7 = Event.create(name: "Sleepy Bee Bash", price: 40, event_date: "2019-07-14 8:00",alcohol: true, artist: a7, location: l2)
+e8 = Event.create(name: "Christmas Bash", price: 35, event_date: "2019-12-25 8:00",alcohol: false, artist: a8, location: l1)
+e9 = Event.create(name: "Massive Kickback", price: 10, event_date: "2019-05-13 8:00",alcohol: true, artist: a9,location: l4)
+e10 = Event.create(name: "Pisces Bash", price: 0, event_date: "2019-03-12 8:00",alcohol: false, artist: a10,location: l8)

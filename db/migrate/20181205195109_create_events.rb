@@ -5,6 +5,8 @@ class CreateEvents < ActiveRecord::Migration[5.0]
      e.integer :price
      e.datetime :event_date
      e.boolean :alcohol
+     e.string :artist_id
+     e.string :location_id
     end
   end
 end
